@@ -2,31 +2,64 @@
 	<head>
 		<title>My Page</title>
 		<style>
-			h1{
-				color :red;
-
-				font-size: 50;
+			.image{
+				float: right;width: 150px;height:200px;margin: 40px;
 			}
-			.Name{
-				width:200;
-				text-align: center;
-				font-weight: bold;
-				background: green;
-			}
-			.box{float:right; height:100px;}
-            .box:nth-child(1){
-               background-color:red; 
-            }
-
 		</style>
 	</head>
+	<img src="profile.jpg" class="image">
 	<h1> Curriculum Vitae</h1>
-	<body>
-		<div class = "Name">
-			L Sundara Ganapathy
-		</div>
-		<div class="box">
-			<img src="Profile.jpg" width="165" height="200" >
-		</div>
-	</body>
+	
+	<div class = "tab">
+		<button class = "tablinks" onclick = "render(event,'personal')" id ="default" >Personal Details</button>
+		<button class = "tablinks" onclick = "render(event,'Achievement')" >Achievements</button>
+		<button class = "tablinks" onclick = "render(event,'Projects')" >Projects</button>
+		<button class = "tablinks" onclick = "render(event,'Experience')" >Experience</button>
+		<button class = "tablinks" onclick = "render(event,'Course')" >Course Completions</button>
+		<button class = "tablinks" onclick = "render(event,'Contact')" >Contact Details</button>
+	</div>
+	<div id = "personal" class = "tabcontent">
+		<h3>PERSONAL BLOG</h3>
+		<p> Name         : L Sundara Ganapathy </br>
+			Qualificaton : B.tech (under-Graduate)</br>
+			Department   : Information Technology </br>
+			
+		</p>
+	</div>
+	<div id = "Achievement" class = "tabcontent">
+		<h3>ACHIEVEMENTS</h3>
+	</div>
+
+	<div id = "Projects" class = "tabcontent">
+		<h3>PROJECTS</h3>
+	</div>
+
+	<div id = "Experience" class = "tabcontent">
+		<h3>EXPERIENCES</h3>
+	</div>
+
+	<div id = "Course" class = "tabcontent">
+		<h3>COURSES</h3>
+	</div>
+
+	<div id = "Contact" class = "tabcontent">
+		<h3>CONTACT</h3>
+	</div>
+	<script>
+		function render(event,topic){
+			var i,tabcontent,tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for(i = 0;i<tabcontent.length;i++)
+			{
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(topic).style.display = "block";
+			  event.currentTarget.className += " active";
+			}
+		document.getElementById("default").click();
+	</script>
 </html>
