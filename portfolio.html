@@ -2,9 +2,40 @@
 	<head>
 		<title>My Page</title>
 		<style>
+			
+			* {box-sizing: border-box;}
+
+			.wrapper {
+			    border: 2px solid #f76707;
+			    border-radius: 5px;
+			    background-color: #fff4e6;
+			}
+
+			.wrapper > div {
+			    border: 2px solid #ffa94d;
+			    border-radius: 5px;
+			    background-color: #ffd8a8;
+			    padding: 1em;
+			    color: #d9480f;
+			}
+			.wrapper {
+			  display: grid;
+			  grid-template-columns: repeat(3, 1fr);
+			  grid-gap: 10px;
+			  grid-auto-rows: 100px;
+			}
+	
+			.tabcontent{
+				display: flex;  
+  				flex-wrap: wrap;
+				background: #364038;
+				
+			}		
+			
 			.image{
 				float: right;width: 150px;height:200px;margin: 40px;
 			}
+			
 		</style>
 	</head>
 	<img src="Profile.jpg" class="image">
@@ -28,10 +59,23 @@
 	</div>
 	<div id = "Achievement" class = "tabcontent">
 		<h3>ACHIEVEMENTS</h3>
+		<ul>
+			<li>Won the special jury award-Best Complete Solution at IBM Hack Challenge 2019 conducted by IBM India Pvt.limited,Bangalore.</li>
+			<li>Won the best team award at ONEYES HACKATHON 2019 held on Meenakshi college of Engineering.</li>
+			<li>Won first prize in "SAMHITA '20",the competitive programming event held on Madras Institute Of Technology,Anna university.</li>
+			<li>Won second prize in "Code Day" ,the competitive programming event held on Sri Sairam Engineering college.</li>
+			<li>Won second prize in "Cybertriz 2019",the competitive programming event held on St.Joseph's Institute of Technology.</li>
+		</ul>
 	</div>
 
 	<div id = "Projects" class = "tabcontent">
 		<h3>PROJECTS</h3>
+		<ul>
+			<li>Smart Parking System using IoT.</li>
+			<li>Facial Gestures Based  Control System for Differently-abled Individuals using opencv.</li>
+			<li>Energy Audit in Households using Machine learning.</li>
+			<li>Social distancing monitoring system using opencv.</li>
+		</ul>
 	</div>
 
 	<div id = "Experience" class = "tabcontent">
@@ -40,10 +84,24 @@
 
 	<div id = "Course" class = "tabcontent">
 		<h3>COURSES</h3>
+		<div class = "wrapper">
+			<div>One</div>
+		    <div>Two</div>
+		    <div>Three</div>
+		    <div>Four</div>
+		    <div>Five</div> 
+		</div>
 	</div>
 
 	<div id = "Contact" class = "tabcontent">
 		<h3>CONTACT</h3>
+		<div class="wrapper">
+		<div class="flex-container"><img src="Certificates/Algorithm.jpg" width = 100px height=100px></div>
+		  <div class="flex-container"><img src="Certificates/Git and Github.jpg" width=100px height=100px></div>
+		  <div class="flex-container"><img src="Certificates/Grammer and punctuation.jpg" width=100px height=100px></div>  
+		  <div class="flex-container"><img src="Certificates/Neural.jpg" width =100px height=100px></div>
+		  <div class="flex-container"><img src="Certificates/Operation System.jpg" width =100px height=100px></div>
+		</div>s
 	</div>
 	<script>
 		function render(event,topic){
