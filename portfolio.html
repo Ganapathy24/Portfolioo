@@ -35,6 +35,10 @@
 			  width: 16.66%;
 			  padding: 10px;
 			}
+			.row  >#image{
+				float: right;
+				background: #a795c2;
+			}
 
 			
 			.row:after {
@@ -84,14 +88,15 @@
 		<button class = "tablinks" onclick = "render(event,'Contact')" >Contact Details</button>
 	</div>
 	<div class = "row">
+		<img id = "image" src="profile.jpg" width = 200px height = 250px>
 		<div id = "personal" class = "tabcontent">
 			<h3>PERSONAL BLOG</h3>
 			<p> Name         : L Sundara Ganapathy </br>
 				Qualificaton : B.tech (under-Graduate)</br>
 				Department   : Information Technology </br>
-				
 			</p>
 		</div>
+		
 		<div id = "Achievement" class = "tabcontent">
 			<h3>ACHIEVEMENTS</h3>
 			<ul>
@@ -119,7 +124,7 @@
 			<p>Developed a mobile application with client-server interaction where I used Python -Django as server scripting language and Java programming language for building application in android studio.Developed for the purpose of managing employees in the company</p>
 			<h4>WinWinWeb</h4>
 			<p>Developed and Hosted a mobile application in the play store where I expressed my Augmented Reality skills.Developed for the purpose of advertising the company using catalog.</p>
-			<img src="Certificates/winwinweb.jpg">
+			<img  id = "image" src="Certificates/winwinweb.jpg" width = 200px height = 400px>
 		</div>
 
 		<div id = "Course" class = "tabcontent">
