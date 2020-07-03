@@ -1,47 +1,81 @@
 <html>
 	<head>
 		<title>My Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			.header {
+			  background-color: #f1f1f1;
+			  padding: 20px;
+			  text-align: center;
+			}
+			.topnav {
+			  overflow: hidden;
+			  background-color: #333;
+			}
+			.topnav button {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			.topnav button:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			.tablinks {
+				background: #84479e;
+			  float: left;
+			  font-size: 20px;
+			  width: 16.66%;
+			  padding: 10px;
+			}
+
 			
-			* {box-sizing: border-box;}
-
-			.wrapper {
-			    border: 2px solid #f76707;
-			    border-radius: 5px;
-			    background-color: #fff4e6;
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
 			}
-
-			.wrapper > div {
-			    border: 2px solid #ffa94d;
-			    border-radius: 5px;
-			    background-color: #ffd8a8;
-			    padding: 1em;
-			    color: #d9480f;
-			}
-			.wrapper {
-			  display: grid;
-			  grid-template-columns: repeat(3, 1fr);
-			  grid-gap: 10px;
-			  grid-auto-rows: 100px;
-			}
-	
 			.tabcontent{
-				display: flex;  
-  				flex-wrap: wrap;
-				background: #364038;
-				
-			}		
-			
-			.image{
-				float: right;width: 150px;height:200px;margin: 40px;
+				background: blue;
 			}
-			
+			.tabcontent > div {
+				background: #9e475a;
+			}
+			.gridview img {
+			  float: left;
+			  margin :10;
+			  background: blue;
+			  display: block;
+			  color: #f2f2f2;
+			  width: auto;
+			}
+			#image { 
+			  border: 10px solid transparent;
+			  padding: 5px;
+			  border-image: url(Certificates/Algorithm.jpg) 100 round;
+			}
+
+			/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+			@media screen and (max-width:600px) {
+			  .column {
+			    width: 60%;
+			  }
+
+			}
 		</style>
 	</head>
-	<img src="Profile.jpg" class="image">
+	<div class= "header">
 	<h1> Curriculum Vitae</h1>
+	</div>
 	
-	<div class = "tab">
+	<div class = "topnav">
 		<button class = "tablinks" onclick = "render(event,'personal')" id ="default" >Personal Details</button>
 		<button class = "tablinks" onclick = "render(event,'Achievement')" >Achievements</button>
 		<button class = "tablinks" onclick = "render(event,'Projects')" >Projects</button>
@@ -49,59 +83,67 @@
 		<button class = "tablinks" onclick = "render(event,'Course')" >Course Completions</button>
 		<button class = "tablinks" onclick = "render(event,'Contact')" >Contact Details</button>
 	</div>
-	<div id = "personal" class = "tabcontent">
-		<h3>PERSONAL BLOG</h3>
-		<p> Name         : L Sundara Ganapathy </br>
-			Qualificaton : B.tech (under-Graduate)</br>
-			Department   : Information Technology </br>
-			
-		</p>
-	</div>
-	<div id = "Achievement" class = "tabcontent">
-		<h3>ACHIEVEMENTS</h3>
-		<ul>
-			<li>Won the special jury award-Best Complete Solution at IBM Hack Challenge 2019 conducted by IBM India Pvt.limited,Bangalore.</li>
-			<li>Won the best team award at ONEYES HACKATHON 2019 held on Meenakshi college of Engineering.</li>
-			<li>Won first prize in "SAMHITA '20",the competitive programming event held on Madras Institute Of Technology,Anna university.</li>
-			<li>Won second prize in "Code Day" ,the competitive programming event held on Sri Sairam Engineering college.</li>
-			<li>Won second prize in "Cybertriz 2019",the competitive programming event held on St.Joseph's Institute of Technology.</li>
-		</ul>
-	</div>
-
-	<div id = "Projects" class = "tabcontent">
-		<h3>PROJECTS</h3>
-		<ul>
-			<li>Smart Parking System using IoT.</li>
-			<li>Facial Gestures Based  Control System for Differently-abled Individuals using opencv.</li>
-			<li>Energy Audit in Households using Machine learning.</li>
-			<li>Social distancing monitoring system using opencv.</li>
-		</ul>
-	</div>
-
-	<div id = "Experience" class = "tabcontent">
-		<h3>EXPERIENCES</h3>
-	</div>
-
-	<div id = "Course" class = "tabcontent">
-		<h3>COURSES</h3>
-		<div class = "wrapper">
-			<div>One</div>
-		    <div>Two</div>
-		    <div>Three</div>
-		    <div>Four</div>
-		    <div>Five</div> 
+	<div class = "row">
+		<div id = "personal" class = "tabcontent">
+			<h3>PERSONAL BLOG</h3>
+			<p> Name         : L Sundara Ganapathy </br>
+				Qualificaton : B.tech (under-Graduate)</br>
+				Department   : Information Technology </br>
+				
+			</p>
 		</div>
-	</div>
+		<div id = "Achievement" class = "tabcontent">
+			<h3>ACHIEVEMENTS</h3>
+			<ul>
+				<li>Won the special jury award-Best Complete Solution at IBM Hack Challenge 2019 conducted by IBM India Pvt.limited,Bangalore.</li>
+				<li>Won the best team award at ONEYES HACKATHON 2019 held on Meenakshi college of Engineering.</li>
+				<li>Won first prize in "SAMHITA '20",the competitive programming event held on Madras Institute Of Technology,Anna university.</li>
+				<li>Won second prize in "Code Day" ,the competitive programming event held on Sri Sairam Engineering college.</li>
+				<li>Won second prize in "Cybertriz 2019",the competitive programming event held on St.Joseph's Institute of Technology.</li>
+			</ul>
+		</div>
 
-	<div id = "Contact" class = "tabcontent">
-		<h3>CONTACT</h3>
-		<div class="wrapper">
-		<div class="flex-container"><img src="Certificates/Algorithm.jpg" width = 100px height=100px></div>
-		  <div class="flex-container"><img src="Certificates/Git and Github.jpg" width=100px height=100px></div>
-		  <div class="flex-container"><img src="Certificates/Grammer and punctuation.jpg" width=100px height=100px></div>  
-		  <div class="flex-container"><img src="Certificates/Neural.jpg" width =100px height=100px></div>
-		  <div class="flex-container"><img src="Certificates/Operation System.jpg" width =100px height=100px></div>
-		</div>s
+		<div id = "Projects" class = "tabcontent">
+			<h3>PROJECTS</h3>
+			<ul>
+				<li>Smart Parking System using IoT.</li>
+				<li>Facial Gestures Based  Control System for Differently-abled Individuals using opencv.</li>
+				<li>Energy Audit in Households using Machine learning.</li>
+				<li>Social distancing monitoring system using opencv.</li>
+			</ul>
+		</div>
+
+		<div id = "Experience" class = "tabcontent">
+			<h3>EXPERIENCES</h3>
+			<h4>Kadhisudhir Solutions</h4>
+			<p>Developed a mobile application with client-server interaction where I used Python -Django as server scripting language and Java programming language for building application in android studio.Developed for the purpose of managing employees in the company</p>
+			<h4>WinWinWeb</h4>
+			<p>Developed and Hosted a mobile application in the play store where I expressed my Augmented Reality skills.Developed for the purpose of advertising the company using catalog.</p>
+		</div>
+
+		<div id = "Course" class = "tabcontent">
+			<h3>COURSES</h3>
+			<div class="gridview">
+			  <div><img id = "image" src="Certificates/Algorithm.jpg" width=200px height=200px></div>
+			  <div ><img id = "image"src="Certificates/Git and Github.jpg" width=200px height=200px></div>
+			  <div ><img id = "image" src="Certificates/Grammer and punctuation.jpg" width=200px height=200px></div>  
+			  <div ><img id = "image" src="Certificates/Neural.jpg" width =200px height=200px></div>
+			  <div><img id = "image" src="Certificates/Operation System.jpg" width =200px height=200px></div>
+			</div>
+		</div>
+		<div id = "Contact" class = "tabcontent">
+			<h3>CONTACT</h3>
+			<div class = "wrapper">
+				<p> Name   : L Sundara Ganapathy </br>
+					ADDRESS :No:11,New colony second street,</br>
+			        Adambakkam,Chennai</br>
+			        PHONE  : +91 7639210637</br>
+			        Email  :sundaraganapathy24@gmail.com</br>
+			        Linked In :www.linkedin.com/in/ganapathy24 </br>
+			    </p>
+
+			</div>
+		</div>
 	</div>
 	<script>
 		function render(event,topic){
