@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
-    background-color:#577894;
+    background-color:#96abbe;
+
   }
   .header {
-    background-color: #f1f1f1;
-    margin: 50;
+    background-image: url(Sun_background.jfif);
+    margin: 2%;
+    text-decoration: underline;
     text-align: center;
   }
   .topnav {
@@ -12,20 +14,19 @@
     background-color: #333;
   }
   .topnav button {
-    float: left;
     display: block;
-    color: #9bd4ec;
+    float: left;
+    color:ivory;
+    font-size: 15px;
     text-align: center;
-    padding: 14px 14px;
   }
   .topnav button:hover {
     background-color: #ddd;
     color: black;
   }
   .tablinks {
+    
     background: #30435a;
-    float: left;
-    font-size: 20px;
     width: 16.66%;
     padding: 10px;
   }
@@ -35,6 +36,7 @@
       margin: 10px;
   }
   .tabcontent{
+    
       align-self: center;
   }
 
@@ -46,6 +48,10 @@
   .tabcontent > p{
       padding: 10px;
       text-align: justify;
+      line-height: 30px;
+      text-shadow: 1px 1px gray;
+      letter-spacing: 0.5px;
+      word-spacing: 3px;
       font-size: 20px;
       font-style: oblique;
     
