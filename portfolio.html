@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My Page</title>
+		<title>Portfolio</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href = "styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<div class= "header" >
-	<h1 >Personal Blog</h1>
+		<h1 >Sundara Ganapathy L</h1>
+		<div class ="icons">
+			<a href = "https://github.com/Ganapathy24"><i class ="fa fa-github" style = "font-size: 30px;"></i></a>
+			<a href = "https://linkedin.com/in/ganapathy24/"><i class="fa fa-linkedin-square" style="font-size: 30px;"></i></a>
+			<a href = "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=sundaraganapathy24@gmail.com&tf=1"><i class="fa fa-envelope" style = "font-size: 30px;"></i></a>
+		</div>
 	</div>
 	
 	<div class = "topnav">
-		<button class = "tablinks" onclick = "render(event,'personal')" id ="default" >Personal Details</button>
+		<button class = "tablinks" onclick = "render(event,'personal')" id ="default" >Biography</button>
 		<button class = "tablinks" onclick = "render(event,'Achievement')" >Achievements</button>
 		<button class = "tablinks" onclick = "render(event,'Projects')" >Projects</button>
-		<button class = "tablinks" onclick = "render(event,'Experience')" >Experience</button>
-		<button class = "tablinks" onclick = "render(event,'Course')" >Course Completions</button>
-		<button class = "tablinks" onclick = "render(event,'Contact')" >Contact Details</button>
+		<button class = "tablinks" onclick = "render(event,'Experience')" >Internships</button>
+		<button class = "tablinks" onclick = "render(event,'Course')" >Certifications</button>
 	</div>
 	<div class = "row" >
 		<div id = "personal" class = "tabcontent">
-			<img id = "image"src="Profile.jpg" width = 200px height = 250px>
-			<h2>Myself, Sundara Ganapathy L</h2>
-			<p>Schieble became pregnant with Jobs in 1954, when she and Jandali spent the summer with his family in Homs, Syria. According to Jandali, Schieble deliberately did not involve him in the process: "without telling me, Joanne upped and left to move to San Francisco to have the baby without anyone knowing, including me."[12] Schieble gave birth to Jobs on February 24, 1955, in San Francisco and chose an adoptive couple for him that was "Catholic, well-educated, and wealthy,"[13][page needed][14] but the couple later changed their mind.[13][page needed] Jobs was then placed with Paul and Clara Jobs, neither of whom had a college education, and Schieble refused to sign the adoption papers.[15] She then took the matter to court in an attempt to have her baby placed with a different family,[13][page needed] and only consented to releasing the baby to Paul and Clara after the couple pledged to pay for the boy's college education.[16] When Steve Jobs was in high school, his mother Clara admitted to his girlfriend, Chrisann Brennan, that she "was too frightened to love [Steve] for the first six months of his life ... I was scared they were going to take him away from me. Even after we won the case, Steve was so difficult a child that by the time he was two I felt we had made a mistake. I wanted to return him."[13][page needed] When Chrisann shared his mother's comment with Steve, he stated that he was already aware,[13][page needed] and would later say he was deeply loved and indulged by Paul and Clara.[17][page needed] Many years later, Steve Jobs's wife Laurene also noted that "he felt he had been really blessed by having the two of them as parents."[17][page needed] Jobs would become upset when Paul and Clara were referred to as his "adoptive parents"; he regarded them as his parents "1,000%". With regard to his biological parents, Jobs referred to them as "my sperm and egg bank. That's not harsh, it's just the way it was, a sperm bank thing, nothing more."[8]
-			</p>
+		<div class ="biodata">
+			<div class = "paragraph">
+			book is a medium for recording information in the form of writing or images, typically composed of many pages (made of papyrus, parchment, vellum, or paper) bound together and protected by a cover.[1] The technical term for this physical arrangement is codex (plural, codices). In the history of hand-held physical supports for extended written compositions or records, the codex replaces its immediate predecessor, the scroll. A single sheet in a codex is a leaf, and each side of a leaf is a page.
+			As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable investment of time to compose and a still considerable, though not so extensive, investment of time to read. This sense of book has a restricted and an unrestricted sense. In the restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book. In the unrestricted sense, a book is the compositional whole of which such sections, whether called books or chapters or parts, are parts.
+			The intellectual content in a physical book need not be a composition, nor even be called a book. Books can consist only of drawings, engravings, or photographs, or such things as crossword puzzles or cut-out dolls. In a physical book, the pages can be left blank or can feature an abstract set of lines as support for ongoing entries, e.g., an account book, an appointment book, an autograph book, a notebook, a diary, or a sketchbook. Some physical books are made with pages thick and sturdy enough to support other physical objects, like a scrapbook or photograph album. Books may be distributed in electronic form as e-books and other formats.
+			</div>
+			<div><img id = "image" src="Profile.jpg" width = 200px height = 250px></div>
+		</div>
 		</div>
 		
 		<div id = "Achievement" class = "tabcontent">
-			<h3>ACHIEVEMENTS</h3>
-			<ul>
-				<li>Won the special jury award-Best Complete Solution at IBM Hack Challenge 2019 conducted by IBM India Pvt.limited,Bangalore.</li><hr>
-				<li>Won the best team award at ONEYES HACKATHON 2019 held on Meenakshi college of Engineering.</li><hr>
-				<li>Won first prize in "SAMHITA '20",the competitive programming event held on Madras Institute Of Technology,Anna university.</li><hr>
-				<li>Won second prize in "Code Day" ,the competitive programming event held on Sri Sairam Engineering college.</li><hr>
-				<li>Won second prize in "Cybertriz 2019",the competitive programming event held on St.Joseph's Institute of Technology.</li><hr>
-			</ul>
+			<div class ="container">
+				<div class = "division">
+					<div class ="btns"><Button>Conference</Button></div>
+					<div class ="btns"><Button>IBM HackChallenge</Button></div>
+					<div class ="btns"><Button>OneYes Hackathon</Button></div>
+					<div class ="btns"><Button>Samhita</Button></div>	
+				</div>
+				<div class ="content">As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable investment of time to compose and a still considerable, though not so extensive, investment of time to read. This sense of book has a restricted and an unrestricted sense. In the restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book. In the unrestricted sense, a book is the compositional whole of which such sections, whether called books or chapters or parts, are parts.
+					The intellectual content in a physical book need not be a composition, nor even be called a book. Books can consist only of drawings.As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable investment of time to compose and a still considerable, though not so extensive, investment of time to read. This sense of book has a restricted and an unrestricted sense. In the restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book. In the unrestricted sense, a book is the compositional whole of which such sections, whether called books or chapters or parts, are parts. The intellectual content in a physical book need not be a composition, nor even be called a book. Books can consist only of drawings
+					As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable investment of time to compose and a still considerable, though not so extensive, investment of time to read. This sense of book has a restricted and an unrestricted sense. In the restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book. In the unrestricted sense, a book is the compositional whole of which such sections, whether called books or chapters or parts, are parts. The intellectual content in a physical book need not be a composition, nor even be called a book. Books can consist only of drawings
+					As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable investment of time to compose and a still considerable, though not so extensive, investment of time to read. This sense of book has a restricted and an unrestricted sense. In the restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book. In the unrestricted sense, a book is the compositional whole of which such sections, whether called books or chapters or parts, are parts. The intellectual content in a physical book need not be a composition, nor even be called a book. Books can consist only of drawings
+					As an intellectual object, a book is prototypically a composition of such great length that it takes a considerable investment of time to compose and a still considerable, though not so extensive, investment of time to read. This sense of book has a restricted and an unrestricted sense. In the restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book. In the unrestricted sense, a book is the compositional whole of which such sections, whether called books or chapters or parts, are parts. The intellectual content in a physical book need not be a composition, nor even be called a book. Books can consist only of drawings
+				</div>
+			</div>
 		</div>
 
 		<div id = "Projects"  class = "tabcontent">
@@ -53,49 +68,36 @@
 			<p>Developed a mobile application with client-server interaction where I used Python -Django as server scripting language and Java programming language for building application in android studio.Developed for the purpose of managing employees in the company</p>
 			<h4>WinWinWeb</h4>
 			<p>Developed and Hosted a mobile application in the play store where I expressed my Augmented Reality skills.Developed for the purpose of advertising the company using catalog.</p>
-			<img  id = "image" src="Certificates/winwinweb.jpg" width = 200px height = 300px>
+			
 		</div>
 
 		<div id = "Course" class = "tabcontent">
-			<h3>COURSES</h3>
-			<div class="gridview">
-			  <div><img id = "image" src="Certificates/Algorithm.jpg" width=200px height=200px></div>
-			  <div ><img id = "image"src="Certificates/Git and Github.jpg" width=200px height=200px></div>
-			  <div ><img id = "image" src="Certificates/Grammer and punctuation.jpg" width=200px height=200px></div>  
-			  <div ><img id = "image" src="Certificates/Neural.jpg" width =200px height=200px></div>
-			  <div><img id = "image" src="Certificates/Operation System.jpg" width =200px height=200px></div>
-			  <div><img id = "image" src="Certificates/Programming.jpg" width =200px height=200px></div>
-			  <div><img id = "image" src="Certificates/Python.jpg" width =200px height=200px></div>
-			</div>
-		</div>
-		<div id = "Contact" class = "tabcontent">
-			<h3>CONTACT</h3>
-			<div class = "wrapper">
-				<p> Name   : L Sundara Ganapathy </br>
-					ADDRESS :No:11,New colony second street,</br>
-			        Adambakkam,Chennai - 88</br>
-			        PHONE  : +91 7639210637</br>
-			        Email  :sundaraganapathy24@gmail.com</br>
-			        Linked In :www.linkedin.com/in/ganapathy24</br>
-			    </p>
+			<div class ="container">
+				<div class = "division">
+					<div class ="btns"><Button>Coursera</Button></div>
+					<div class ="btns"><Button>EDX</Button></div>
+					<div class ="btns"><Button>UDEMY</Button></div>
+					<div class ="btns"><Button>GeeksForGeeks</Button></div>	
+				</div>
+				<div class ="content">
+					<div class="gridview">
+						<div><img class = "image" alt="ALgorithmic Toolbox" src="Certificates/Algorithm.jpg" onclick = "preview(event,src,alt)" width=200px height=200px></div>
+						<div><img class = "image" alt="Git and Github" src="Certificates/Git and Github.jpg" onclick = "preview(event,src,alt)" width=200px height=200px></div>
+						<div><img class = "image" alt="Grammer and Punctuation" src="Certificates/Grammer and punctuation.jpg" onclick = "preview(event,src,alt)" width=200px height=200px></div>  
+						<div><img class = "image" alt="Neural Networks" src="Certificates/Neural.jpg" onclick = "preview(event,src,alt)" width =200px height=200px></div>
+						<div><img class = "image" alt="Operating System" src="Certificates/Operation System.jpg" onclick = "preview(event,src,alt)" width =200px height=200px></div>
+						<div><img class = "image" alt="Programming" src="Certificates/Programming.jpg" onclick = "preview(event,src,alt)" width =200px height=200px></div>
+						<div><img class = "image" alt="Python Crash course" src="Certificates/Python.jpg" onclick = "preview(event,src,alt)" width =200px height=200px></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script>
-		function render(event,topic){
-			var i,tabcontent,tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for(i = 0;i<tabcontent.length;i++)
-			{
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-			  }
-			  document.getElementById(topic).style.display = "block";
-			  event.currentTarget.className += " active";
-			}
-		document.getElementById("default").click();
-	</script>
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	  </div>
+	<script src = "preview.js"></script>
+	<script src = "render.js"></script>
 </html>

@@ -1,13 +1,42 @@
 * {
     box-sizing: border-box;
-    background-color:#96abbe;
-
+    background-color: #bbb;
   }
-  .header {
-    background-image: url(Sun_background.jfif);
-    margin: 2%;
-    text-decoration: underline;
+  .icons > a {
+    margin: 3px;
+    background-color: transparent;
+  }
+  .fa-github{
+    color:black;
+  }
+  .fa-linkedin-square{
+    color: black;
+  }
+  .fa-envelope{
+    color: black;
+  }
+  .fa-github:hover{
+    color:white;
+    background-color: black;
+  }
+  .fa-linkedin-square:hover{
+    color: white;
+    background-color: black;
+  }
+  .fa-envelope:hover{
+    color: white;
+    background-color: black;
+    
+  }
+  .header{
     text-align: center;
+    background-color: #30435a;
+  }
+
+  .wrapper > p{
+    text-align: justify;
+    color: #ddd;
+    background-color: #333;
   }
   .topnav {
     overflow: hidden;
@@ -24,45 +53,91 @@
     background-color: #ddd;
     color: black;
   }
+  .btns button:hover{
+    background-color: whitesmoke;
+    color:black;
+  }
+  .btns button{
+    background-color: #30435a;
+    color: white;
+    box-shadow: 2px 2px 2px 2px black;
+    height: 100%;
+    width: 200px;
+    margin: 2px;
+    height: 40px;
+  }
+  .content{
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    z-index: 5px;
+    align-items:center:;
+    text-align: justify;
+    margin: 10px;
+  }
+  .division {
+    display: inline-flexbox;
+    align-self: center;
+    height: 100%;
+  }
+  .container
+  {
+    display: inline-flex;
+    width: fit-content;
+    height: 100%;
+    columns: 2;
+  }
   .tablinks {
-    
     background: #30435a;
-    width: 16.66%;
+    width: 20%;
     padding: 10px;
   }
-  .row  > #personal > #image{
-      float: right;
+  .paragraph{
+    box-shadow:  2px 2px 2px 2px black;
+    line-height: 30px;
+    margin: 5px;
+    height: max-content;
+    padding: 5px;
+    text-shadow: 0.5px 0.5px  grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+  }
+  .biodata {
+    display: inline-flex;
+  }
+   #image{
+     box-shadow: 2px 2px 2px 2px black;
       background: #2b3f5a;
-      margin: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 7px solid transparent;
+      padding:5px;
+      border-image: url(Certificates/Algorithm.jpg) 100 round;
   }
-  .tabcontent{
-    
+  .tabcontent > p{
       align-self: center;
+      margin: 10px;
+      text-shadow:1px 1px grey;
+      text-align: justify;
+      font-size: 20px;    
+      line-height: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
   }
-
-  
   .row:after {
     display: table;
     clear: both;
   }
-  .tabcontent > p{
-      padding: 10px;
-      text-align: justify;
-      line-height: 30px;
-      text-shadow: 1px 1px gray;
-      letter-spacing: 0.5px;
-      word-spacing: 3px;
-      font-size: 20px;
-      font-style: oblique;
-    
-  }
+  
   .gridview{
-      width :100%;
-      align-self: center;
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    align-self: center;
   }
   
   .gridview img {
-    float: left;
     margin: 20px;
     background: #2f3f6b;
     display: grid;
@@ -70,14 +145,89 @@
     color: #f2f2f2;
     width: auto;
   }
-  #image { 
+  .modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .image{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
     border: 7px solid transparent;
     padding:5px;
     border-image: url(Certificates/Algorithm.jpg) 100 round;
   }
+  .image:hover{
+    border: 2px solid transparent;
+    padding: 0px;
+    border-image: none;
+  }
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:60%) {
     .column {
       width: 60%;
     }
